@@ -1,0 +1,13 @@
+specVersion: "v1beta"
+serviceId: "grape"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "grape-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
+repositoryUrl: "https://github.com/HBF7678/Grape.git"
